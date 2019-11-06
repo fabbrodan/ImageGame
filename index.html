@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8"/>
         <link rel="stylesheet" type="text/css" href="style.css"/>
+        <script src="script.js" type="text/javascript" ></script>
     </head>
     <body>
         <div class="header">
@@ -13,10 +14,10 @@
         <div class="gameimage">
             <img src="findWaldo.png" alt="Where is waldo?" usemap="#waldo" />
             <map name="waldo">
-                <area shape="circle" coords="699, 47, 10" href="success.html" />
-                <area shape="circle" coords="679, 480, 30" href="fail.html" />
-                <area shape="rect" coords="300, 150, 350,220" href="fail.html" />
-                <area shape="circle" coords="600, 250, 25" href="fail.html" />
+                <area onclick ="correctAttempt()" shape="circle" coords="699, 47, 10" href="success.html" />
+                <area onclick="failedAttempt()" shape="circle" coords="679, 480, 30" href="fail.html" />
+                <area onclick="failedAttempt()" shape="rect" coords="300, 150, 350,220" href="fail.html" />
+                <area onclick="failedAttempt()" shape="circle" coords="600, 250, 25" href="fail.html" />
             </map>
         </div>
     </body>

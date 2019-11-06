@@ -8,7 +8,7 @@ body{
     margin: auto;
 }
 
-img{
+img {
     max-width: 100%;
     max-height: 100%;
 }
@@ -19,4 +19,9 @@ img{
 
 footer{
     text-align: center;
+}
+
+#failImg {
+    height: inherit;
+    width: inherit;
 }
